@@ -1,58 +1,126 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title>gel theme sport</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<head>
+  <meta charset="utf-8">
+  <title>GEL Theme / Sport</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+  <!-- build:css(.tmp) styles/demo.css -->
+  <link rel="stylesheet" href="styles/demo.css">
+  <!-- endbuild -->
 
-    
-    <div class="hero-unit">
-      <h1>'Allo, 'Allo!</h1>
-      <p>You now have</p>
-      <ul>
-        <li><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></li>
-        <li><a href="http://libsass.org/">Sass</a></li>
-      </ul>
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+
+<body class="gel-sport">
+
+
+  <div class="gel-wrap">
+    <div class="gel-grid">
+      <div class="gel__grid-item  w--s-one-half">
+
+        <div class="card card--gallery js-card">
+          <div class="card__inner">
+            <div class="card__media js-gallery-cta">
+              <img src="//placehold.it/600x400" />
+              <div class="card__cta"><i class="icon icon--gallery"></i></div>
+            </div>
+            <div class="card__content">
+              <div class="card__headline">
+                <h3>{{ content.headline }}</h3>
+              </div>
+              <div class="card__sub-headline">
+                <p>{{ content.sub-headline }}</p>
+              </div>
+              <div class="card__attribution {{ content.attribution.class }}">
+                <span>{{ content.attribution.label }}</span>
+              </div>
+            </div>
+            <div class="card__panel js-panel">
+              <p>{{ content.info }}</p>
+            </div>
+            <div class="card__share-panel share-panel js-share-panel">
+              <h4>Share...</h4>
+              <ul class="share-panel__options">
+                <li class="share-panel__option"><i class="icon icon--digg"></i>
+                  <span>Digg</span>
+                </li>
+                <li class="share-panel__option"><i class="icon icon--google"></i>
+                  <span>Google</span>
+                </li>
+                <li class="share-panel__option"><i class="icon icon--reddit"></i>
+                  <span>Reddit</span>
+                </li>
+                <li class="share-panel__option"><i class="icon icon--twitter"></i>
+                  <span>Twitter</span>
+                </li>
+                <li class="share-panel__option"><i class="icon icon--facebook"></i>
+                  <span>Facebook</span>
+                </li>
+                <li class="share-panel__option"><i class="icon icon--linkedin"></i>
+                  <span>LinkedIn</span>
+                </li>
+                <li class="share-panel__option"><i class="icon icon--stumbleupon"></i>
+                  <span>Stumbleupon</span>
+                </li>
+                <li class="share-panel__option"><i class="icon icon--email"></i>
+                  <span>Email</span>
+                </li>
+              </ul>
+            </div>
+            <div class="card__toolbar">
+              <div class="card__toolbar-inner">
+                <div class="card__more-cta js-more">
+                  <i class="icon icon--arrow-up"></i>
+                  <i class="icon icon--close"></i>
+                  <span class="js-panel-trigger-label">More info</span>
+                </div>
+                <div class="card__panel card__panel--love is-hidden">
+                  <span class="js-love-trigger-label">love panel</span>
+                </div>
+
+                <div class="card__panel card__panel--add is-hidden">
+                  <span class="js-add-trigger-label">add</span>
+                </div>
+              </div>
+              <ul class="card__social-icons">
+                <li class="card__social js-love-cta"><i class="icon icon--love"></i></li>
+                <li class="card__social js-add-cta"><i class="icon icon--add"></i></li>
+                <li class="card__social js-share-cta"><i class="icon icon--share"></i></li>
+              </ul>
+            </div>
+            <div class="card__gallery js-gallery">
+              <div class="card__gallery-container">
+
+                <div class="card__gallery-images">
+                  <img class="card__gallery-image js-gallery-img is-active" src="http://clients.tuimedia.com/bbc-assets/proms.jpg" />
+                  <img class="card__gallery-image js-gallery-img" src="http://clients.tuimedia.com/bbc-assets/boat.gif" />
+                  <img class="card__gallery-image js-gallery-img" src="http://clients.tuimedia.com/bbc-assets/jungle.jpg" />
+                </div>
+                <div class="card__gallery-close js-gallery-close"><i class="icon icon--close"></i></div>
+                <div class="card__gallery-controls">
+                  <div class="card__gallery-prev js-gallery-prev"><i class="icon icon--prev"></i></div>
+                  <div class="card__gallery-play js-gallery-play"><i class="icon icon--play"></i></div>
+                  <div class="card__gallery-pause js-gallery-pause is-hidden"><i class="icon icon--pause"></i></div>
+                  <div class="card__gallery-prev js-gallery-next"><i class="icon icon--next"></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
-    
+  </div>
 
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
-    <!-- endbower -->
-    <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/cards.js"></script>
+  <!-- endbuild -->
+</body>
 
-    
-
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-  </body>
 </html>

@@ -1,31 +1,30 @@
-// bower:scss
-// endbower
+@import '../bower_components/gos-core/src/styles/settings.colours';
+@import '../bower_components/gos-core/src/styles/settings.units';
+// @import '../bower_components/gos-core/src/styles/settings.icons';
+@import '../bower_components/gos-core/src/styles/tools.rem';
+@import '../bower_components/gos-core/src/styles/tools.media-query';
 
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
-}
+$sport-card-theme: (
+  bg: #fedd53,
+  content-bg: rgba(0,0,0,0.3),
+  color: #121212,
+  box-shadow: none,
+  toolbar-height: 48px,
+  toolbar-bg: #fedd53,
+  toolbar-border: none,
+  icon-w: 48px,
+  icon-h: 48px,
+  cta-bg: #fedd53,
+  cta-color: #ffffff,
+  cta-hover-bg: #ffffff,
+  cta-hover-color: #000000,
+  share-panel-bg: #fedd53,
+  share-panel-transition: all 200ms cubic-bezier(0.420, 0.000, 0.580, 1.000),
+  control-ui-bg: rgba(0,0,0,0.7)
+);
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-}
+.gel-sport {
+  font-family: 'fs-elliot-regular';
 
-.browsehappy {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+  @import 'cards';
 }
